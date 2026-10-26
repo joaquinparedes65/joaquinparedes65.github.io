@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trazo: presupuestos y recibos</title>
+<meta name="description" content="Presupuestos, comprobantes y recibos en PDF para talleres y oficios. Funciona sin internet, sin cuenta y con un solo pago.">
+<style>
+  :root {
+    --azul: #16233F;
+    --naranja: #FF7A1A;
+    --fondo: #F4F6FA;
+    --hoja: #FFFFFF;
+    --texto: #1B2333;
+    --suave: #4A5468;
+    --linea: #DDE2EC;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --azul: #E6EAF3;
+      --fondo: #0F1626;
+      --hoja: #16233F;
+      --texto: #E6EAF3;
+      --suave: #B4BCCD;
+      --linea: #2A3958;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--fondo);
+    color: var(--texto);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 48px; }
+  .marca { display: flex; align-items: center; gap: 14px; color: var(--azul); }
+  .marca svg { width: 64px; height: 64px; flex: none; }
+  .marca span { font-weight: 800; font-size: 40px; letter-spacing: -0.5px; }
+  h1 { color: var(--azul); font-size: 28px; line-height: 1.25; margin: 24px 0 8px; }
+  .bajada { color: var(--suave); font-size: 19px; margin: 0 0 24px; }
+  .tarjetas { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+  .tarjeta {
+    background: var(--hoja);
+    border: 1px solid var(--linea);
+    border-radius: 12px;
+    padding: 16px 18px;
+  }
+  .tarjeta strong { display: block; color: var(--azul); margin-bottom: 4px; }
+  h2 { color: var(--azul); font-size: 21px; margin: 32px 0 8px; }
+  .promesa { border-left: 5px solid var(--naranja); padding: 2px 0 2px 16px; }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  a { color: inherit; }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--linea); color: var(--suave); font-size: 15px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="marca">
+    <svg viewBox="0 0 100 100" aria-hidden="true">
+      <path d="M18 74H82" fill="none" stroke="currentColor" stroke-width="9" stroke-linecap="round"/>
+      <path d="M30 42L48 66L78 26" fill="none" stroke="#FF7A1A" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Trazo</span>
+  </div>
+
+  <h1>Presupuestos y recibos para talleres y oficios</h1>
+  <p class="bajada">Armá un presupuesto prolijo con tu logo, mandalo por WhatsApp y anotá cada pago. Desde el celular, sin internet y sin crear cuentas.</p>
+
+  <div class="tarjetas">
+    <div class="tarjeta"><strong>Presupuestos en PDF</strong>Con tu logo y tus colores, en tres diseños. Se mandan por WhatsApp como archivo.</div>
+    <div class="tarjeta"><strong>Anticipos y pagos</strong>Cada pago con su recibo numerado. Sabés cuánto te debe cada cliente.</div>
+    <div class="tarjeta"><strong>Entregas al día</strong>Fecha de entrega con días laborables y feriados. Inicio te muestra lo atrasado.</div>
+    <div class="tarjeta"><strong>Tus datos son tuyos</strong>Quedan en tu celular y, si querés, en tu propio Google Drive. Exportar es siempre gratis.</div>
+  </div>
+
+  <h2>Pagás una sola vez</h2>
+  <div class="promesa">
+    <p>Se baja gratis y se prueba completa con 10 trabajos. Después, un solo pago desbloquea todo, sin cuotas mensuales.</p>
+    <ul>
+      <li>Las correcciones y mejoras de esta versión de Trazo te llegan gratis.</li>
+      <li>Nunca se te quita algo que ya pagaste.</li>
+      <li>Tus datos están en tu celular y en tu Google Drive. Nadie más los ve.</li>
+    </ul>
+  </div>
+
+  <h2>Muy pronto en Google Play</h2>
+  <p>Trazo está en prueba. Por ahora es para Android 8 o más nuevo, en español y para Argentina.</p>
+
+  <footer>
+    <a href="privacidad.html">Política de privacidad</a> · Contacto: <a href="mailto:trazo.app.ar@gmail.com">trazo.app.ar@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>
